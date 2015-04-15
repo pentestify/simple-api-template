@@ -2,8 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 before do
-  raise "XXX - SECURITY - You should set an API key!"
-  error 401 unless params[:key] =~ /^WHATEVER/
+  error 401 unless params[:key] =~ /^jcran/
 end
 
 get '/' do
